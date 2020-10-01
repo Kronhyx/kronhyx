@@ -14,7 +14,13 @@
 <br />
 <br />
 
-Hi, I'm Randy Tellez, a passionate self-taught frontEnd web developer from Cuba.
+First and foremost, I love writing code. Ever since writing my first program in C++ and manipulating it to produce a desired output, I have been obsessed with the idea of using software to solve practical problems. Software engineering is a never-ending puzzle that I am passionately engaged in solving. I believe in the power of programming to transform and improve the lives of people around the world.
+
+For my first professional contract, I was given the opportunity to lead a full UI/UX overhaul of a small start up's website. My second contract involved injecting HTML/CSS/JavaScript on popular merchant websites via a browser extension. This contract quickly turned into a full time offer and I have been happily expanding my role as a software engineer ever since. Today, I am a senior engineer at Flexy E-Commerce Plattaform working on the backend of our main marketplace, www.flexy.com.br. Most recently, we have been implementing a micro front end into our customer acquisition flow so that it can be dynamically composed using demographic data and allow for CI/CD deployments to bring features to market faster.
+
+Even when I leave the office, I tend to continue writing code at the house. Most recently I have been working on a website for my company, Skwzer. I dont play any musical instrument but also im an passionate by the music. Both pursuits challenge so many aspects of the intellect: creativity, organization, sequential processing, problem solving. This is what keeps me up at night, a never ending thirst to create beautiful, powerful things and share them with the world.
+
+Skills/Interests: JavaScript, Typescript, Symfony, Laravel, NodeJS, Vue, Angular, VueX, NuxtJS, StencilJS, Webpack/Babel, StyledComponents, WebNativeComponents, CSS, HTML, Git, GitLab, GitHub, SQL, DevOps, TDD, Firebase, CI/CD, Docker 
 
 - 🔭 I’m currently working on my project [Merkaly](https://github.com/sk-merkaly)
 - 🌱 I’m currently learning Flutter & Go

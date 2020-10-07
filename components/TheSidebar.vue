@@ -2,7 +2,7 @@
   <header class="header text-center">
     <div class="force-overflow">
       <h1 class="blog-name pt-lg-4 mb-0">
-        <a>Randy Tellez</a>
+        <a v-text="name" />
       </h1>
 
       <nav class="navbar navbar-expand-lg navbar-dark">
@@ -10,7 +10,7 @@
 
         <b-collapse id="navigation" is-navclass="flex-column" visible>
           <div class="profile-section pt-3 pt-lg-0">
-            <img class="profile-image mb-3 rounded-circle mx-auto" src="https://avatars0.githubusercontent.com/u/16559276?s=460&u=51fd2dbf319237d204efb1cf21b41b38057ecffd&v=4" alt="image">
+            <img class="profile-image mb-3 rounded-circle mx-auto" :src="avatar" alt="image">
 
             <div class="bio mb-3">
               Hi, my name is Simon Doe and I'm a senior software engineer. Welcome to my personal website!
@@ -52,7 +52,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
+import { Component, State, Vue } from 'nuxt-property-decorator'
 
 interface LinkType {
   name: string
@@ -62,6 +62,9 @@ interface LinkType {
 
 @Component({ components: {} })
 export default class TheSidebar extends Vue {
+  @State('name') readonly name!: string
+  @State('avatar') readonly avatar!: string
+
   get networks (): LinkType[] {
     return [
       { name: 'Twitter', icon: 'fa-twitter', link: 'https://twitter.com/kronhyx' },

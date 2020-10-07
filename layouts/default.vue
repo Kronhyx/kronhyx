@@ -1,7 +1,9 @@
 <template>
   <div>
     <TheSidebar />
-    <Nuxt />
+    <div class="main-wrapper">
+      <Nuxt />
+    </div>
   </div>
 </template>
 

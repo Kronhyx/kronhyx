@@ -10,13 +10,19 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' }
     ],
+    bodyAttrs: {
+      class: 'dark-mode'
+    },
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://themes.3rdwavemedia.com/devcard/bs4/2.2/assets/css/theme-1.css' },
+      { rel: 'stylesheet', href: 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' }
     ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    '@/assets/style/main'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)

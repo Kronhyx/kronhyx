@@ -17,24 +17,15 @@
           Check out my <a>online resume</a> and <a>project portfolio</a>.
         </div>
         <b-row>
-          <StackCard title="Vanilla JavaScript">
+          <StackCard v-for="skill in skills" :key="skill.name" :title="skill.name">
             <template #icons>
-              <b-img-lazy src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" :height="30" />
+              <b-btn-group size="sm">
+                <b-btn v-for="icon in skill.icons" :key="icon" size="sm" variant="link">
+                  <b-img-lazy :src="icon" :height="28" />
+                </b-btn>
+              </b-btn-group>
             </template>
             List skills/technologies here. You can change the icon above to any of the 1500+
-            <a class="theme-link" href="https://fontawesome.com/" target="_blank">FontAwesome 5 free icons</a>
-            available. Aenean commodo ligula eget dolor.
-          </StackCard>
-
-          <StackCard title="Angular, React & Vue">
-            <template #icons>
-              <b-img-lazy src="https://avatars0.githubusercontent.com/u/139426?s=200&v=4" :height="30" />
-              <b-img-lazy src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/220px-React-icon.svg.png" :height="30" />
-              <b-img-lazy src="https://vuejs.org/images/logo.png" :height="30" />
-            </template>
-            List skills/technologies here. You can change the icon above to any of the 1500+
-            <a class="theme-link" href="https://fontawesome.com/" target="_blank">FontAwesome 5 free icons</a>
-            available. Aenean commodo ligula eget dolor.
           </StackCard>
         </b-row>
       </div>
@@ -47,8 +38,55 @@ import { Component, Vue } from 'nuxt-property-decorator'
 import ProfileCard from '~/components/ProfileCard.vue'
 import StackCard from '~/components/StackCard.vue'
 
+interface SkillInterface {
+  name: string,
+  icons?: string[]
+  description?: string
+}
+
 @Component({ components: { ProfileCard, StackCard } })
 export default class DefaultLayout extends Vue {
-
+  get skills (): SkillInterface[] {
+    return [
+      {
+        name: 'Vanilla JavaScript',
+        icons: [
+          require('@/assets/img/javascript.svg'),
+          require('@/assets/img/html.svg'),
+          require('@/assets/img/css.svg')
+        ]
+      },
+      {
+        name: 'Angular, React & Vue',
+        icons: [
+          require('@/assets/img/angularjs.svg'),
+          require('@/assets/img/reactjs.svg'),
+          require('@/assets/img/vuejs.svg')
+        ]
+      },
+      {
+        name: 'Runtime plataform',
+        icons: [
+          require('@/assets/img/nodejs.svg'),
+          require('@/assets/img/denojs.svg')
+        ]
+      },
+      {
+        name: 'Dependency Manager',
+        icons: [
+          require('@/assets/img/composer.png'),
+          require('@/assets/img/npm.svg')
+        ]
+      },
+      {
+        name: 'PHP, Laravel, Symfony',
+        icons: [
+          require('@/assets/img/php.svg'),
+          require('@/assets/img/symfony.svg'),
+          require('@/assets/img/laravel.svg')
+        ]
+      }
+    ]
+  }
 }
 </script>

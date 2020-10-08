@@ -17,16 +17,18 @@
           Check out my <a>online resume</a> and <a>project portfolio</a>.
         </div>
         <b-row>
-          <StackCard v-for="skill in skills" :key="skill.name" :title="skill.name">
-            <template #icons>
-              <b-btn-group size="sm">
-                <b-btn v-for="icon in skill.icons" :key="icon" size="sm" variant="link">
-                  <b-img-lazy :src="icon" :height="28" />
-                </b-btn>
-              </b-btn-group>
-            </template>
-            List skills/technologies here. You can change the icon above to any of the 1500+
-          </StackCard>
+          <b-col v-for="skill in skills" :key="skill.name" cols="6" md="4" class="item">
+            <StackCard :title="skill.name">
+              <template #icons>
+                <b-btn-group size="sm">
+                  <b-btn v-for="icon in skill.icons" :key="icon" size="sm">
+                    <b-img-lazy :src="icon" :height="28" />
+                  </b-btn>
+                </b-btn-group>
+              </template>
+              List skills/technologies here. You can change the icon above to any of the 1500+
+            </StackCard>
+          </b-col>
         </b-row>
       </div>
     </section>
@@ -72,10 +74,11 @@ export default class DefaultLayout extends Vue {
         ]
       },
       {
-        name: 'Dependency Manager',
+        name: 'Composer, npm & Gulp',
         icons: [
           require('@/assets/img/composer.png'),
-          require('@/assets/img/npm.svg')
+          require('@/assets/img/npm.svg'),
+          require('@/assets/img/gulpjs.svg')
         ]
       },
       {
@@ -84,6 +87,13 @@ export default class DefaultLayout extends Vue {
           require('@/assets/img/php.svg'),
           require('@/assets/img/symfony.svg'),
           require('@/assets/img/laravel.svg')
+        ]
+      },
+      {
+        name: 'GitHub, Docker',
+        icons: [
+          require('@/assets/img/github.svg'),
+          require('@/assets/img/docker.svg')
         ]
       }
     ]

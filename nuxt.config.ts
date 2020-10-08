@@ -19,14 +19,14 @@ export default {
     },
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://themes.3rdwavemedia.com/devcard/bs4/2.2/assets/css/theme-1.css' },
+      { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' },
       { rel: 'stylesheet', href: 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' }
     ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    '@/assets/style/main'
+    '@/assets/style/style'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)

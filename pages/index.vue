@@ -1,35 +1,9 @@
 <template>
   <div>
-    <section class="about-me-section p-3 p-lg-5">
-      <b-container>
-        <ProfileCard />
-      </b-container>
-    </section>
-    <section class="overview-section p-3 p-lg-5">
-      <div class="container">
-        <h2 class="section-title font-weight-bold mb-3">
-          What I do
-        </h2>
-        <div class="section-intro mb-5">
-          I have more than 10 years' experience building software for clients all over the world.
-          Below is a quick overview of my main technical skill sets and technologies I use.
-          Want to find out more about my experience?
-          Check out my <a>online resume</a> and <a>project portfolio</a>.
-        </div>
-        <b-row>
-          <b-col v-for="skill in skills" :key="skill.name" cols="6" md="4" class="item">
-            <StackCard :title="skill.name">
-              <template #icons>
-                <b-btn-group size="sm">
-                  <b-btn v-for="icon in skill.icons" :key="icon" size="sm">
-                    <b-img-lazy :src="icon" :height="28" />
-                  </b-btn>
-                </b-btn-group>
-              </template>
-              List skills/technologies here. You can change the icon above to any of the 1500+
-            </StackCard>
-          </b-col>
-        </b-row>
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+      <div class="hero-container aos-init aos-animate" data-aos="fade-in">
+        <h1>Alex Smith</h1>
+        <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Photographer</span><span class="typed-cursor typed-cursor--blink">|</span></p>
       </div>
     </section>
   </div>

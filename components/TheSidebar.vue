@@ -1,52 +1,31 @@
 <template>
-  <header class="header text-center">
-    <div class="force-overflow">
-      <h1 class="blog-name pt-lg-4 mb-0">
-        <a v-text="name" />
-      </h1>
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <b-img-lazy :src="avatar" rounded="circle" fluid />
+        <h1 class="text-light">
+          <n-link to="/" v-text="name" />
+        </h1>
+        <div class="social-links mt-3 text-center">
+          <a v-for="network in networks" :key="network.name" :href="network.link" target="_blank">
+            <i class="bx" :class="network.icon" />
+          </a>
+        </div>
+      </div>
 
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <b-navbar-toggle target="navigation" />
-
-        <b-collapse id="navigation" is-navclass="flex-column" visible>
-          <div class="profile-section pt-3 pt-lg-0">
-            <img class="profile-image mb-3 rounded-circle mx-auto" :src="avatar" alt="image">
-
-            <div class="bio mb-3">
-              Hi, my name is Simon Doe and I'm a senior software engineer. Welcome to my personal website!
-            </div>
-            <b-row align-h="center">
-              <b-col v-for="social in networks" :key="social.name" cols="2">
-                <b-btn variant="primary" size="sm" :href="social.link" target="_blank" pill>
-                  <i class="fa" :class="social.icon" />
-                </b-btn>
-              </b-col>
-            </b-row>
-          </div>
-
-          <hr>
-
-          <b-navbar-nav class="flex-column text-left">
-            <b-nav-item v-for="item in menu" :key="item.name">
-              <b-row>
-                <b-col cols="1" class="fa">
-                  <i class="fa" :class="item.icon" />
-                </b-col>
-                <b-col v-text="item.name" />
-              </b-row>
-            </b-nav-item>
-          </b-navbar-nav>
-
-          <hr class="mb-4">
-
-          <div class="dark-mode-toggle text-center w-100">
-            <b-btn>
-              <i class="fa fa-crosshairs" />
-              <span>Hire Me</span>
-            </b-btn>
-          </div>
-        </b-collapse>
-      </nav>
+      <b-nav class="nav-menu">
+        <ul>
+          <li v-for="item in menu" :key="item.name" class="active">
+            <n-link :to="item.link">
+              <i class="bx" :class="item.icon" />
+              <span v-text="item.name" />
+            </n-link>
+          </li>
+        </ul>
+      </b-nav><!-- .nav-menu -->
+      <button type="button" class="mobile-nav-toggle d-xl-none">
+        <i class="icofont-navigation-menu" />
+      </button>
     </div>
   </header>
 </template>
@@ -67,20 +46,22 @@ export default class TheSidebar extends Vue {
 
   get networks (): LinkType[] {
     return [
-      { name: 'Twitter', icon: 'fa-twitter', link: 'https://twitter.com/kronhyx' },
-      { name: 'LinkedIn', icon: 'fa-linkedin', link: 'https://linkedin.com/in/kronhyx' },
-      { name: 'Github', icon: 'fa-github', link: 'https://github.com/kronhyx' },
-      { name: 'Stackoverflow', icon: 'fa-stack-overflow', link: 'https://twitter.com/kronhyx' }
+      { name: 'Twitter', icon: 'bxl-twitter', link: 'https://twitter.com/kronhyx' },
+      { name: 'LinkedIn', icon: 'bxl-linkedin', link: 'https://linkedin.com/in/kronhyx' },
+      { name: 'Instagram', icon: 'bxl-instagram', link: 'https://instagram.com/kronhyx' },
+      { name: 'Github', icon: 'bxl-github', link: 'https://github.com/kronhyx' },
+      { name: 'Skype', icon: 'bxl-skype', link: 'https://twitter.com/kronhyx' }
     ]
   }
 
   get menu (): LinkType[] {
     return [
-      { name: 'About me', icon: 'fa-info-circle', link: '/' },
-      { name: 'Portfolio', icon: 'fa-briefcase', link: '/' },
-      { name: 'Services', icon: 'fa-gear', link: '/' },
-      { name: 'Blog', icon: 'fa-podcast', link: '/' },
-      { name: 'Contact', icon: 'fa-handshake-o', link: '/' }
+      { name: 'About', icon: 'bx-home', link: '/' },
+      { name: 'Resume', icon: 'bx-file-blank', link: '/' },
+      { name: 'Portfolio', icon: 'bx-book-content', link: '/' },
+      { name: 'Services', icon: 'bx-server', link: '/' },
+      { name: 'Blog', icon: 'bx-file', link: '/' },
+      { name: 'Contact', icon: 'bx-envelope', link: '/' }
     ]
   }
 }

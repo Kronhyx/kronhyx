@@ -17,7 +17,7 @@
             </div>
             <b-row align-h="center">
               <b-col v-for="social in networks" :key="social.name" cols="2">
-                <b-btn variant="primary" size="sm" :to="social.link" target="_blank" pill>
+                <b-btn variant="primary" size="sm" :href="social.link" target="_blank" pill>
                   <i class="fa" :class="social.icon" />
                 </b-btn>
               </b-col>
@@ -76,11 +76,11 @@ export default class TheSidebar extends Vue {
 
   get menu (): LinkType[] {
     return [
-      { name: 'About me', icon: 'fa-info-circle', link: 'https://twitter.com/kronhyx' },
-      { name: 'Portfolio', icon: 'fa-briefcase', link: 'https://linkedin.com/in/kronhyx' },
-      { name: 'Services', icon: 'fa-gear', link: 'https://github.com/kronhyx' },
-      { name: 'Blog', icon: 'fa-podcast', link: 'https://twitter.com/kronhyx' },
-      { name: 'Contact', icon: 'fa-handshake-o', link: 'https://fb.me/kronhyx' }
+      { name: 'About me', icon: 'fa-info-circle', link: '/' },
+      { name: 'Portfolio', icon: 'fa-briefcase', link: '/' },
+      { name: 'Services', icon: 'fa-gear', link: '/' },
+      { name: 'Blog', icon: 'fa-podcast', link: '/' },
+      { name: 'Contact', icon: 'fa-handshake-o', link: '/' }
     ]
   }
 }

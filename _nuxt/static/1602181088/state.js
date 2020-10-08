@@ -1,1 +1,0 @@
-window.__NUXT__={staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1602181088",layout:"default",error:null,state:{nickname:"Kronhyx",name:"Randy Tellez Galan",avatar:"https:\u002F\u002Favatars0.githubusercontent.com\u002Fu\u002F16559276?s=460&u=51fd2dbf319237d204efb1cf21b41b38057ecffd&v=4"},serverRendered:true,routePath:"\u002F",config:{content:{dbHash:"4a4c1f6b"}}};

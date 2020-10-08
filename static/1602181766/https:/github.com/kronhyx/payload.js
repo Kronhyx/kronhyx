@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/https://github.com/kronhyx", {data:[],fetch:[],mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/https://linkedin.com/in/kronhyx", {data:[],fetch:[],mutations:[]});

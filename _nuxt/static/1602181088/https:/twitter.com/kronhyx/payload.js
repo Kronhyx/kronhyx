@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/https://twitter.com/kronhyx", {data:[],fetch:[],mutations:[]});

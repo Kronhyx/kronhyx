@@ -2,18 +2,21 @@
   <header id="header">
     <b-collapse id="navigation" class="d-flex flex-column" visible>
       <div class="profile">
-        <b-img-lazy :src="avatar" rounded="circle" fluid />
+        <b-img-lazy :src="avatar" rounded="circle" :alt="name" fluid />
         <h1 class="text-light">
           <n-link to="/" v-text="name" />
         </h1>
         <div class="social-links mt-3 text-center">
-          <a v-for="network in networks" :key="network.name" :href="network.link" target="_blank">
-            <i class="bx" :class="network.icon" />
-          </a>
+          <template v-for="network in networks">
+            <a :key="network.name" :href="network.link" rel="noreferrer" target="_blank">
+              <span class="sr-only" v-text="network.name" />
+              <i class="bx" :class="network.icon" />
+            </a>
+          </template>
         </div>
       </div>
 
-      <b-nav class="nav-menu">
+      <b-nav tag="div" class="nav-menu">
         <ul>
           <li v-for="item in menu" :key="item.name" class="active">
             <n-link :to="item.link">

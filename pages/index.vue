@@ -72,7 +72,7 @@ interface SkillInterface {
 }
 
 @Component({ components: { } })
-export default class DefaultLayout extends Vue {
+export default class IndexPage extends Vue {
   @State('name') readonly name!: string
   @State('avatar') readonly avatar!: string
 

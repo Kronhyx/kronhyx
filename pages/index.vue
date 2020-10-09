@@ -1,17 +1,17 @@
 <template>
   <div>
-    <section class="pt-0">
-      <b-row id="hero" align-h="center" align-v="center" no-gutters>
-        <b-container class="hero-container">
-          <div class="text-center">
+    <section id="hero" class="pt-0">
+      <b-container class="hero-container d-flex h-100 w-100 mx-auto">
+        <b-row align-h="center" align-v="center" class="w-100" no-gutters>
+          <div class="typed">
             <h1 v-text="name" />
-            <p>
-              <span>Im</span>
-              <span class="typed">Developer</span>
+            <p class="text-left">
+              <strong>Im</strong>
+              <vue-typer :text="whoami" :erase-delay="35" erase-style="backspace" initial-action="erasing" />
             </p>
           </div>
-        </b-container>
-      </b-row>
+        </b-row>
+      </b-container>
     </section>
     <section id="about" class="about">
       <b-container>
@@ -59,32 +59,6 @@
         </b-row>
       </b-container>
     </section>
-    <section class="section-bg">
-      <b-container>
-        <b-row>
-          <div>
-            <b-col cols="12" tag="p">
-              <p>
-                For my first professional contract, I was given the opportunity to lead a full UI/UX overhaul of a small
-                start up's website. My second contract involved injecting HTML/CSS/JavaScript on popular merchant websites
-                via a browser extension. This contract quickly turned into a full time offer and I have been happily
-                expanding my role as a software engineer ever since. Today, I am a senior engineer at Flexy E-Commerce
-                Plattaform working on the backend of our main marketplace, www.flexy.com.br. Most recently, we have been
-                implementing a micro front end into our customer acquisition flow so that it can be dynamically composed
-                using demographic data and allow for CI/CD deployments to bring features to market faster.
-              </p>
-              <p>
-                Even when I leave the office, I tend to continue writing code at the house. Most recently I have been
-                working on a website for my company, Skwezr. I dont play any musical instrument but also im an
-                passionate by the music. Both pursuits challenge so many aspects of the intellect: creativity,
-                organization, sequential processing, problem solving. This is what keeps me up at night, a never ending
-                thirst to create beautiful, powerful things and share them with the world.
-              </p>
-            </b-col>
-          </div>
-        </b-row>
-      </b-container>
-    </section>
   </div>
 </template>
 
@@ -102,6 +76,10 @@ export default class IndexPage extends Vue {
       'StyledComponents', 'WebNativeComponents', 'CSS', 'HTML', 'Git', ' GitLab', 'GitHub', 'SQL', ' DevOps', 'TDD',
       'Firebase', 'CI/CD', 'Docker'
     ]
+  }
+
+  get whoami () {
+    return ['Senior Software Developer', 'DevOps Engineer']
   }
 }
 </script>

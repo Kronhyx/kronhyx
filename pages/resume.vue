@@ -3,7 +3,23 @@
     <b-container>
       <div class="section-title">
         <h2>Resume</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>
+          For my first professional contract, I was given the opportunity to lead a full UI/UX overhaul of a small
+          start up's website. My second contract involved injecting HTML/CSS/JavaScript on popular merchant websites
+          via a browser extension. This contract quickly turned into a full time offer and I have been happily
+          expanding my role as a software engineer ever since. Today, I am a senior engineer at Flexy E-Commerce
+          Plattaform working on the backend of our main marketplace, www.flexy.com.br. Most recently, we have been
+          implementing a micro front end into our customer acquisition flow so that it can be dynamically composed
+          using demographic data and allow for CI/CD deployments to bring features to market faster.
+        </p>
+        <br>
+        <p>
+          Even when I leave the office, I tend to continue writing code at the house. Most recently I have been
+          working on a website for my company, Skwezr. I dont play any musical instrument but also im an
+          passionate by the music. Both pursuits challenge so many aspects of the intellect: creativity,
+          organization, sequential processing, problem solving. This is what keeps me up at night, a never ending
+          thirst to create beautiful, powerful things and share them with the world.
+        </p>
       </div>
 
       <b-row>

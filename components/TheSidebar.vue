@@ -60,7 +60,7 @@ export default class TheSidebar extends Vue {
   get menu (): LinkType[] {
     return [
       { name: 'About', icon: 'bx-home', link: '/' },
-      { name: 'Resume', icon: 'bx-file-blank', link: '/' },
+      { name: 'Resume', icon: 'bx-file-blank', link: '/resume' },
       { name: 'Portfolio', icon: 'bx-book-content', link: '/' },
       { name: 'Services', icon: 'bx-server', link: '/' },
       { name: 'Blog', icon: 'bx-file', link: '/' },

@@ -1,6 +1,6 @@
 <template>
   <header id="header">
-    <div class="d-flex flex-column">
+    <b-collapse id="navigation" class="d-flex flex-column" visible>
       <div class="profile">
         <b-img-lazy :src="avatar" rounded="circle" fluid />
         <h1 class="text-light">
@@ -22,11 +22,11 @@
             </n-link>
           </li>
         </ul>
-      </b-nav><!-- .nav-menu -->
-      <button type="button" class="mobile-nav-toggle d-xl-none">
-        <i class="icofont-navigation-menu" />
-      </button>
-    </div>
+      </b-nav>
+      <b-navbar-toggle target="navigation" class="mobile-nav-toggle d-xl-none">
+        <i class="bx bx-menu" />
+      </b-navbar-toggle>
+    </b-collapse>
   </header>
 </template>
 

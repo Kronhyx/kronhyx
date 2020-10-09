@@ -1,18 +1,21 @@
 <template>
   <div>
-    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-      <div class="hero-container aos-init aos-animate" data-aos="fade-in">
-        <h1>Alex Smith</h1>
-        <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Photographer</span><span class="typed-cursor typed-cursor--blink">|</span></p>
-      </div>
-    </section>
+    <b-row id="hero" tag="section" align-h="center" align-v="center">
+      <b-container class="hero-container">
+        <div class="text-center">
+          <h1 v-text="name" />
+          <p>
+            <span>Im</span>
+            <span class="typed">Developer</span>
+          </p>
+        </div>
+      </b-container>
+    </b-row>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
-import ProfileCard from '~/components/ProfileCard.vue'
-import StackCard from '~/components/StackCard.vue'
+import { Component, State, Vue } from 'nuxt-property-decorator'
 
 interface SkillInterface {
   name: string,
@@ -20,8 +23,10 @@ interface SkillInterface {
   description?: string
 }
 
-@Component({ components: { ProfileCard, StackCard } })
+@Component({ components: { } })
 export default class DefaultLayout extends Vue {
+  @State('name') readonly name!: string
+
   get skills (): SkillInterface[] {
     return [
       {

@@ -16,15 +16,11 @@
         </div>
       </div>
 
-      <b-nav tag="div" class="nav-menu">
-        <ul>
-          <li v-for="item in menu" :key="item.name" class="active">
-            <n-link :to="item.link">
-              <i class="bx" :class="item.icon" />
-              <span v-text="item.name" />
-            </n-link>
-          </li>
-        </ul>
+      <b-nav class="nav-menu" vertical>
+        <b-nav-item v-for="item in menu" :key="item.name" :to="item.link" exact-active-class="active">
+          <i class="bx" :class="item.icon" />
+          <span v-text="item.name" />
+        </b-nav-item>
       </b-nav>
       <b-navbar-toggle target="navigation" class="mobile-nav-toggle d-xl-none">
         <i class="bx bx-menu" />
@@ -61,10 +57,10 @@ export default class TheSidebar extends Vue {
     return [
       { name: 'About', icon: 'bx-home', link: '/' },
       { name: 'Resume', icon: 'bx-file-blank', link: '/resume' },
-      { name: 'Portfolio', icon: 'bx-book-content', link: '/' },
-      { name: 'Services', icon: 'bx-server', link: '/' },
-      { name: 'Blog', icon: 'bx-file', link: '/' },
-      { name: 'Contact', icon: 'bx-envelope', link: '/' }
+      { name: 'Portfolio', icon: 'bx-book-content', link: '/#' },
+      { name: 'Services', icon: 'bx-server', link: '/#' },
+      { name: 'Blog', icon: 'bx-file', link: '/#' },
+      { name: 'Contact', icon: 'bx-envelope', link: '/#' }
     ]
   }
 }

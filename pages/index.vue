@@ -1,63 +1,89 @@
 <template>
   <div>
-    <b-row id="hero" tag="section" align-h="center" align-v="center" no-gutters>
-      <b-container class="hero-container">
-        <div class="text-center">
-          <h1 v-text="name" />
-          <p>
-            <span>Im</span>
-            <span class="typed">Developer</span>
-          </p>
-        </div>
-      </b-container>
-    </b-row>
+    <section class="pt-0">
+      <b-row id="hero" align-h="center" align-v="center" no-gutters>
+        <b-container class="hero-container">
+          <div class="text-center">
+            <h1 v-text="name" />
+            <p>
+              <span>Im</span>
+              <span class="typed">Developer</span>
+            </p>
+          </div>
+        </b-container>
+      </b-row>
+    </section>
     <section id="about" class="about">
-      <div class="container">
+      <b-container>
         <div class="section-title">
           <h2>About</h2>
           <p>
-            I have more than 5 years' experience building software for clients all over the world.
-            Below is a quick overview of my main technical skill sets and technologies I use.
-            Want to find out more about my experience?
-            Check out my <a>online resume</a> and <a>project portfolio</a>.
+            First and foremost, I love writing code. Ever since writing my first program in C++ and manipulating it to
+            produce a desired output, I have been obsessed with the idea of using software to solve practical problems.
+            Software engineering is a never-ending puzzle that I am passionately engaged in solving. I believe in the
+            power of programming to transform and improve the lives of people around the world.
           </p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4 aos-init aos-animate" data-aos="fade-right">
-            <img :src="avatar" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-left">
+        <b-row>
+          <b-col md="4">
+            <b-img-lazy :src="avatar" :alt="name" fluid />
+          </b-col>
+          <b-col md="8" class="content">
             <h3>Senior Software Developer &amp; DevOps Engineer.</h3>
             <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              I have more than 5 years' experience building software for clients all over the world.
+              Below is a quick overview of my main technical skill sets and technologies I use.
+              Want to find out more about my experience?
+              Check out my <a>online resume</a> and <a>project portfolio</a>.
             </p>
-            <div class="row">
-              <div class="col-lg-6">
+            <b-row>
+              <b-col md="6">
                 <ul>
-                  <li><i class="icofont-rounded-right" /> <strong>Birthday:</strong> 1 May 1995</li>
-                  <li><i class="icofont-rounded-right" /> <strong>Website:</strong> www.example.com</li>
-                  <li><i class="icofont-rounded-right" /> <strong>Phone:</strong> +123 456 7890</li>
-                  <li><i class="icofont-rounded-right" /> <strong>City:</strong> New York, USA</li>
+                  <li><i class="icofont-rounded-right" /> <strong>Birthday:</strong> 17 October 1993</li>
+                  <li><i class="icofont-rounded-right" /> <strong>Website:</strong> kronhyx.me</li>
+                  <li><i class="icofont-rounded-right" /> <strong>Phone:</strong> +1 305 697 88 54</li>
+                  <li><i class="icofont-rounded-right" /> <strong>City:</strong> Santa Catarina, Brasil</li>
                 </ul>
-              </div>
-              <div class="col-lg-6">
+              </b-col>
+              <b-col md="6">
                 <ul>
                   <li><i class="icofont-rounded-right" /> <strong>Age:</strong> 30</li>
                   <li><i class="icofont-rounded-right" /> <strong>Degree:</strong> Master</li>
-                  <li><i class="icofont-rounded-right" /> <strong>PhEmailone:</strong> email@example.com</li>
+                  <li><i class="icofont-rounded-right" /> <strong>email:</strong> kronhyx@gmail.com</li>
                   <li><i class="icofont-rounded-right" /> <strong>Freelance:</strong> Available</li>
                 </ul>
-              </div>
-            </div>
-            <p>
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-            </p>
+              </b-col>
+            </b-row>
+          </b-col>
+        </b-row>
+      </b-container>
+    </section>
+    <section class="section-bg">
+      <b-container>
+        <b-row>
+          <div>
+            <b-col cols="12" tag="p">
+              <p>
+                For my first professional contract, I was given the opportunity to lead a full UI/UX overhaul of a small
+                start up's website. My second contract involved injecting HTML/CSS/JavaScript on popular merchant websites
+                via a browser extension. This contract quickly turned into a full time offer and I have been happily
+                expanding my role as a software engineer ever since. Today, I am a senior engineer at Flexy E-Commerce
+                Plattaform working on the backend of our main marketplace, www.flexy.com.br. Most recently, we have been
+                implementing a micro front end into our customer acquisition flow so that it can be dynamically composed
+                using demographic data and allow for CI/CD deployments to bring features to market faster.
+              </p>
+              <p>
+                Even when I leave the office, I tend to continue writing code at the house. Most recently I have been
+                working on a website for my company, Skwezr. I dont play any musical instrument but also im an
+                passionate by the music. Both pursuits challenge so many aspects of the intellect: creativity,
+                organization, sequential processing, problem solving. This is what keeps me up at night, a never ending
+                thirst to create beautiful, powerful things and share them with the world.
+              </p>
+            </b-col>
           </div>
-        </div>
-      </div>
+        </b-row>
+      </b-container>
     </section>
   </div>
 </template>
@@ -65,65 +91,16 @@
 <script lang="ts">
 import { Component, State, Vue } from 'nuxt-property-decorator'
 
-interface SkillInterface {
-  name: string,
-  icons?: string[]
-  description?: string
-}
-
-@Component({ components: { } })
+@Component({ components: {} })
 export default class IndexPage extends Vue {
   @State('name') readonly name!: string
   @State('avatar') readonly avatar!: string
 
-  get skills (): SkillInterface[] {
+  get skills (): string[] {
     return [
-      {
-        name: 'Vanilla JavaScript',
-        icons: [
-          require('@/assets/img/javascript.svg'),
-          require('@/assets/img/html.svg'),
-          require('@/assets/img/css.svg')
-        ]
-      },
-      {
-        name: 'Angular, React & Vue',
-        icons: [
-          require('@/assets/img/angularjs.svg'),
-          require('@/assets/img/reactjs.svg'),
-          require('@/assets/img/vuejs.svg')
-        ]
-      },
-      {
-        name: 'Runtime plataform',
-        icons: [
-          require('@/assets/img/nodejs.svg'),
-          require('@/assets/img/denojs.svg')
-        ]
-      },
-      {
-        name: 'Composer, npm & Gulp',
-        icons: [
-          require('@/assets/img/composer.png'),
-          require('@/assets/img/npm.svg'),
-          require('@/assets/img/gulpjs.svg')
-        ]
-      },
-      {
-        name: 'PHP, Laravel, Symfony',
-        icons: [
-          require('@/assets/img/php.svg'),
-          require('@/assets/img/symfony.svg'),
-          require('@/assets/img/laravel.svg')
-        ]
-      },
-      {
-        name: 'GitHub, Docker',
-        icons: [
-          require('@/assets/img/github.svg'),
-          require('@/assets/img/docker.svg')
-        ]
-      }
+      'Typescript', 'Symfony', 'Laravel', 'NodeJS', 'Vue', 'Angular', 'VueX', 'NuxtJS', 'StencilJS', 'Webpack',
+      'StyledComponents', 'WebNativeComponents', 'CSS', 'HTML', 'Git', ' GitLab', 'GitHub', 'SQL', ' DevOps', 'TDD',
+      'Firebase', 'CI/CD', 'Docker'
     ]
   }
 }

@@ -164,12 +164,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #6f7180;
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+.nav-menu a:hover, .nav-menu .active, .nav-menu li:hover > a {
   text-decoration: none;
   color: #fff;
 }
 
-.nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
+.nav-menu a:hover i, .nav-menu .active > i, .nav-menu li:hover > a i {
   color: #149ddd;
 }
 

@@ -30,7 +30,7 @@
             </p>
           </ResumeItem>
         </b-col>
-        <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <b-col md="6">
           <h3 class="resume-title">
             Professional Experience
           </h3>
@@ -58,7 +58,7 @@
               unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila
             </p>
           </ResumeItem>
-        </div>
+        </b-col>
       </b-row>
     </b-container>
   </section>

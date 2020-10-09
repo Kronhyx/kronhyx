@@ -8,11 +8,19 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
+import { Component, State, Vue } from 'nuxt-property-decorator'
+import { MetaInfo } from 'vue-meta'
 import TheSidebar from '~/components/TheSidebar.vue'
 
 @Component({ components: { TheSidebar } })
 export default class DefaultLayout extends Vue {
+  @State('name') readonly name!: string
+  @State('nickname') readonly nickname!: string
 
+  head (): MetaInfo {
+    return {
+      title: `${this.name} (${this.nickname})`
+    }
+  }
 }
 </script>

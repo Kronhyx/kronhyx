@@ -17,14 +17,14 @@
     "@nuxtjs/pwa": "^3.3.5",
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
-    "core-js": "^3.8.3",
+    "core-js": "^3.9.0",
     "nuxt": "^2.15.0",
     "vue-typer": "^1.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
-    "@nuxt/types": "^2.14.6",
+    "@nuxt/types": "^2.15.0",
     "@nuxt/typescript-build": "^2.0.4",
     "@nuxtjs/eslint-config": "^5.0.0",
     "@nuxtjs/eslint-config-typescript": "^3.0.0",

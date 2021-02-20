@@ -49,7 +49,7 @@ export default class TheSidebar extends Vue {
       { name: 'LinkedIn', icon: 'bxl-linkedin', link: 'https://linkedin.com/in/kronhyx' },
       { name: 'Instagram', icon: 'bxl-instagram', link: 'https://instagram.com/kronhyx' },
       { name: 'Github', icon: 'bxl-github', link: 'https://github.com/kronhyx' },
-      { name: 'Skype', icon: 'bxl-skype', link: 'https://twitter.com/kronhyx' }
+      { name: 'Skype', icon: 'bxl-skype', link: 'skype:kronhyx' }
     ]
   }
 

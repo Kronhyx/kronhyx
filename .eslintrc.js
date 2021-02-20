@@ -4,12 +4,13 @@ module.exports = {
     browser: true,
     node: true
   },
+  ignorePatterns: [
+    './functions/*'
+  ],
   extends: [
     '@nuxtjs/eslint-config-typescript',
     'plugin:nuxt/recommended'
   ],
-  plugins: [
-  ],
-  // add your custom rules here
+  plugins: [],
   rules: {}
 }

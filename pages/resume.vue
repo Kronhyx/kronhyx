@@ -91,7 +91,7 @@ interface SkillInterface {
 }
 
 @Component({ components: { ResumeItem } })
-export default class IndexPage extends Vue {
+export default class ResumePage extends Vue {
   get skills (): SkillInterface[] {
     return [
       {

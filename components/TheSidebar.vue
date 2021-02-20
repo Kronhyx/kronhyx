@@ -60,7 +60,7 @@ export default class TheSidebar extends Vue {
       { name: 'Portfolio', icon: 'bx-book-content', link: '/#' },
       { name: 'Services', icon: 'bx-server', link: '/#' },
       { name: 'Blog', icon: 'bx-file', link: '/#' },
-      { name: 'Contact', icon: 'bx-envelope', link: '/#' }
+      { name: 'Contact', icon: 'bx-envelope', link: '/contact' }
     ]
   }
 }

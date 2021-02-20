@@ -62,7 +62,7 @@
                 <b-form-textarea :rows="12" required />
               </b-form-group>
               <div class="text-center">
-                <b-btn variant="info" size="lg" type="submit">
+                <b-btn variant="primary" size="lg" type="submit">
                   Send Message
                 </b-btn>
               </div>

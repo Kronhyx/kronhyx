@@ -14,11 +14,16 @@
 <br />
 <br />
 
-First and foremost, I love writing code. Ever since writing my first program in C++ and manipulating it to produce a desired output, I have been obsessed with the idea of using software to solve practical problems. Software engineering is a never-ending puzzle that I am passionately engaged in solving. I believe in the power of programming to transform and improve the lives of people around the world.
+First of all, I love writing code. Ever since I wrote my first C ++ program and manipulated it to produce the desired result, I have been obsessed with the idea of ​​using software to solve practical problems. Software engineering is an endless puzzle that I am passionately committed to solving. I believe in the power of programming to transform and improve the lives of people around the world.
 
-For my first professional contract, I was given the opportunity to lead a full UI/UX overhaul of a small start up's website. My second contract involved injecting HTML/CSS/JavaScript on popular merchant websites via a browser extension. This contract quickly turned into a full time offer and I have been happily expanding my role as a software engineer ever since. Today, I am a senior engineer at Flexy E-Commerce Plattaform working on the backend of our main marketplace, www.flexy.com.br. Most recently, we have been implementing a micro front end into our customer acquisition flow so that it can be dynamically composed using demographic data and allow for CI/CD deployments to bring features to market faster.
+For my first professional contract, I had the opportunity to implement the migration of a small system made in Symfony 1 to Symfony 2. My second contract consisted of architecture an existing business model using the best tools and the best performance at that time. This contract quickly turned into a full-time offer and since then I have been expanding my role as a software engineer. Today, I am a senior engineer at Flexy E-Commerce Platform and I work on the backend of our main product, www.flexy.com.br.
+Recently, we have implemented a micro front-end in our customer acquisition flow so that it can be dynamically composed using demographic data and allow CI / CD implementations to bring resources to market more quickly.
 
-Even when I leave the office, I tend to continue writing code at the house. Most recently I have been working on a website for my company, Skwzer. I dont play any musical instrument but also im an passionate by the music. Both pursuits challenge so many aspects of the intellect: creativity, organization, sequential processing, problem solving. This is what keeps me up at night, a never ending thirst to create beautiful, powerful things and share them with the world.
+In recent times of COVID, I have been continuously contributing to the open source community in large and reference projects such as NuxtJS and Symfony, I am currently a collaborator of the official NuxtJS repository, in charge of translations into Spanish and Portuguese under supervision by Debbie Obrien
+
+Even when I leave the office, I usually continue to write code at home. Most recently, I was working on a personal project called, Skwzer.
+
+I do not play any musical instrument but I am also passionate about music. Both challenge many aspects of the intellect: creativity, organization, sequential processing, problem solving. This is what keeps me awake at night, an incessant thirst to create beautiful and powerful things and share them with the world.
 
 Skills/Interests: JavaScript, Typescript, Symfony, Laravel, NodeJS, Vue, Angular, VueX, NuxtJS, StencilJS, Webpack/Babel, StyledComponents, WebNativeComponents, CSS, HTML, Git, GitLab, GitHub, SQL, DevOps, TDD, Firebase, CI/CD, Docker 
 
